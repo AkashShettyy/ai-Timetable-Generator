@@ -1,32 +1,56 @@
-# AI Timetable Generator
+# 🧠 AI Timetable Generator
 
-Smart university timetable generation system with real-time faculty availability sync.
+Smart university timetable generation system with real-time faculty availability synchronization and intelligent conflict detection.
+
+---
 
 ## 🚀 Features
 
-- **AI-Powered Timetable Generation** - Intelligent course scheduling with faculty expertise matching
-- **Faculty Availability Sync** - Real-time sync between "Update Your Activity" and "My Teaching Schedule"
-- **Conflict Detection** - Automatic detection of scheduling conflicts
-- **Clean Table Display** - Professional timetable visualization
-- **Role-Based Access** - Admin, Faculty, and Student dashboards
+### 🤖 AI-Powered Timetable Generation
+
+- Intelligent course scheduling
+- Faculty expertise-based assignment
+- Availability-aware timetable creation
+- Load balancing across faculty members
+
+### 🔄 Real-Time Faculty Sync
+
+- Sync between **"Update Your Activity"** and **"My Teaching Schedule"**
+- Automatic conflict detection
+- Visual conflict indicators
+- Admin alerts for scheduling conflicts
+
+### 🔐 Secure Role-Based Access
+
+- Admin Dashboard
+- Faculty Dashboard
+- Student Dashboard
+- JWT-based authentication
+- Bcrypt password hashing
+
+---
 
 ## 🛠️ Tech Stack
 
-**Backend:**
+### Backend
 
-- Node.js + Express.js
-- MongoDB + Mongoose
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
 - JWT Authentication
-- Bcrypt password hashing
+- Bcrypt
 
-**Frontend:**
+### Frontend
 
-- React.js + Vite
+- React.js (Vite)
 - Tailwind CSS
-- Axios for API calls
+- Axios
 - React Router DOM
 
-## ⚡ Quick Start
+---
+
+## ⚡ Quick Start Guide
 
 ### Prerequisites
 
@@ -34,22 +58,28 @@ Smart university timetable generation system with real-time faculty availability
 - MongoDB running locally
 - Git
 
-### Installation
+---
 
-1. **Clone the repository**
+## 📦 Installation & Setup
+
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/AkashShettyy/ai-Timetable-Generator.git
 cd ai-Timetable-Generator
 ```
 
-2. **Setup Backend**
+---
 
-````bash
+### 2️⃣ Backend Setup
+
+```bash
 cd backend
 npm install
+```
 
-3. **Create .env file in backend folder**
+Create a `.env` file inside the **backend** folder:
+
 ```bash
 MONGO_URI=mongodb://localhost:27017/timetable
 JWT_SECRET=your_jwt_secret_key_here
@@ -58,24 +88,108 @@ EMAIL_PASS=your_app_password
 PORT=3001
 FRONTEND_URL=http://localhost:5173
 ADMIN_EMAIL=admin@university.edu
+```
 
-4. **Setup Database**
+---
+
+### 3️⃣ Database Setup
+
 ```bash
 node createAdmin.js
 node quickSetup.js
+```
 
-5. **Start Backend Server**
+---
+
+### 4️⃣ Start Backend Server
+
 ```bash
 npm run dev
+```
 
-6. **Setup Frontend**
+Backend runs at:
+
+```
+http://localhost:3001
+```
+
+---
+
+### 5️⃣ Frontend Setup
+
 ```bash
 cd ../frontend
 npm install
 npm run dev
+```
 
-7. **Login Credentials**
-```bash
-- Admin: admin@university.edu / admin123
-- Faculty: sarah.johnson@university.edu / admin123
-````
+Frontend runs at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🔐 Demo Login Credentials
+
+### 👨‍💼 Admin
+
+Email: `admin@university.edu`  
+Password: `admin123`
+
+### 👩‍🏫 Faculty
+
+Email: `sarah.johnson@university.edu`  
+Password: `admin123`
+
+---
+
+## 🧪 Test Faculty Sync Feature
+
+1. Login as Faculty
+2. Go to Faculty Dashboard
+3. Update availability (mark time slots unavailable)
+4. Click **Update Availability**
+5. Check **My Teaching Schedule**
+6. Observe real-time sync and conflict warnings
+
+---
+
+## 🌐 Access Points
+
+- Frontend: http://localhost:5173
+- Backend API: http://localhost:3001
+- Admin Dashboard: http://localhost:5173/admin/dashboard
+- Faculty Dashboard: http://localhost:5173/faculty/dashboard
+
+---
+
+## 🎯 Core System Capabilities
+
+- AI-driven timetable generation
+- Faculty-course expertise matching
+- Real-time availability synchronization
+- Automatic conflict detection
+- Room and faculty clash prevention
+- Load-balanced scheduling
+- Secure authentication system
+
+---
+
+## 📌 Future Enhancements
+
+- Email conflict notifications
+- Google Calendar integration
+- Cloud deployment support
+- Advanced analytics dashboard
+
+---
+
+## 👨‍💻 Author
+
+**Akash N**  
+Software Developer Apprentice  
+Full Stack Developer
+
+GitHub: https://github.com/AkashShettyy
